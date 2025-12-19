@@ -40,7 +40,7 @@
             groupBox1.Controls.Add(textBoxResP_EKP);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(641, 488);
+            groupBox1.Size = new Size(490, 488);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Население";
@@ -50,12 +50,12 @@
             textBoxResP_EKP.Location = new Point(6, 26);
             textBoxResP_EKP.Multiline = true;
             textBoxResP_EKP.Name = "textBoxResP_EKP";
-            textBoxResP_EKP.Size = new Size(629, 456);
+            textBoxResP_EKP.Size = new Size(478, 456);
             textBoxResP_EKP.TabIndex = 0;
             // 
             // buttonRes_EKP
             // 
-            buttonRes_EKP.Location = new Point(443, 506);
+            buttonRes_EKP.Location = new Point(292, 506);
             buttonRes_EKP.Name = "buttonRes_EKP";
             buttonRes_EKP.Size = new Size(104, 29);
             buttonRes_EKP.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             // buttonClose_EKP
             // 
-            buttonClose_EKP.Location = new Point(553, 506);
+            buttonClose_EKP.Location = new Point(402, 506);
             buttonClose_EKP.Name = "buttonClose_EKP";
             buttonClose_EKP.Size = new Size(94, 29);
             buttonClose_EKP.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(665, 544);
+            ClientSize = new Size(514, 544);
             Controls.Add(buttonClose_EKP);
             Controls.Add(buttonRes_EKP);
             Controls.Add(groupBox1);

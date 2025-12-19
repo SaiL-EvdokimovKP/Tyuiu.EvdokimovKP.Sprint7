@@ -1,9 +1,15 @@
 ﻿using Project.V13.Lib;
+using System.Media;
+using System;
+using System.Windows.Forms;
+using WMPLib;
 
 namespace Project.V13.Main
 {
     public partial class FormMain : Form
     {
+        private WindowsMediaPlayer wmp;
+
         //Массив для флагов
         private string[] flagPaths = new string[] {
             @"C:\Users\evdok\Desktop\Флаги\Флаг Китая в 1921 году.jpg",
@@ -60,9 +66,16 @@ namespace Project.V13.Main
             "ДР Конго", "Иран", "Турция", "Германия", "Таиланд"
         };
 
+        //  Музыка
+        WMPLib.WindowsMediaPlayer music = new WMPLib.WindowsMediaPlayer();
+        bool isPlaying = false;
+        bool button = false;
         public FormMain()
         {
             InitializeComponent();
+            music.URL = @"C:\Users\evdok\Desktop\музака для спринта\ABBA_-_Happy_New_Year_47835607.mp3";
+            music.settings.volume = 47;
+            music.controls.play();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -276,6 +289,7 @@ namespace Project.V13.Main
         }
 
 
+
         private void button3_Click(object sender, EventArgs e) //население
         {
             Population formpopulation = new Population();
@@ -302,6 +316,17 @@ namespace Project.V13.Main
         {
             Analitic analitic = new Analitic();
             analitic.ShowDialog();
+        }
+
+        private void buttonS_Analitic_EKP_Click(object sender, EventArgs e)
+        {
+            AnaliticS analiticS = new AnaliticS();
+            analiticS.ShowDialog();
+        }
+
+        private void textBoxDano_EKP_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,19 +21,10 @@ class Program
 
         Console.WriteLine("Анализ населения стран\n");
 
-        // Вывод исходных данных
-        Console.WriteLine("Исходные данные:");
-        Console.WriteLine(new string('-', 40));
-        for (int i = 0; i < countries.Length; i++)
-        {
-            Console.WriteLine($"{countries[i],-15} {population[i]:N0} чел.");
-        }
-        Console.WriteLine(new string('-', 40));
-
         // Использование метода из библиотеки
         var analysisReport = DataService.PopulationAnalyzer.GetPopulationAnalysisReport(population, countries);
 
-        Console.WriteLine("\nРезультаты анализа:");
+
         Console.WriteLine(new string('-', 40));
         Console.WriteLine(analysisReport);
 
